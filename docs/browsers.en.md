@@ -108,6 +108,61 @@ We generally do not recommend installing any extensions as they increase your at
 
 The [Arkenfox project](https://github.com/arkenfox/user.js) provides a set of carefully considered options for Firefox. These options are quite strict but a few are subjective and may cause some websites to not work properly. You can easily change these settings to suit your needs. We **strongly recommend** reading through their [wiki](https://github.com/arkenfox/user.js/wiki). Arkenfox also enables [container](https://support.mozilla.org/en-US/kb/containers#w_for-advanced-users) support.
 
+### Brave
+
+!!! recommendation
+
+    ![Brave logo](assets/img/browsers/brave.svg){ align=right }
+
+    **Brave** is built upon the Chromium browser, featuring a built in adblocker and some [privacy features](https://brave.com/privacy-features/) enabled by default.
+
+    We only recommend Brave as a desktop browser. There are better [alternatives](#mobile-browser-recommendations) on mobile platforms.
+
+    [Visit Homepage](https://brave.com/){ .md-button .md-button--primary } [Privacy Policy](https://brave.com/privacy/browser/){ .md-button }
+
+    ??? downloads
+
+        - [:fontawesome-brands-windows: Windows](https://laptop-updates.brave.com/latest/winx64)
+        - [:fontawesome-brands-apple: macOS](https://laptop-updates.brave.com/latest/osxarm64)
+        - [:fontawesome-brands-linux: Linux](https://brave.com/linux/#linux)
+        - [:pg-flathub: Flatpak](https://flathub.org/apps/details/com.brave.Browser)
+        - [:fontawesome-brands-github: Source](https://github.com/brave/brave-browse)
+
+#### Recommended Configuration
+
+##### Shields
+
+Change the adblocker to *agressive mode* in :material-menu: **Settings** → **Shields** → **Trackers & ads blocking**.
+
+Change the fingerprinting blocker to *strict mode* in :material-menu: **Settings** → **Shields** → **Fingerprint blocking**. You can always downgrade it if you need to. We **do not** believe the [fingerprint protection](https://brave.com/privacy-updates/4-fingerprinting-defenses-2.0/) Brave offers is as strong as that of a [well-configured Firefox](https://support.mozilla.org/kb/firefox-protection-against-fingerprinting).
+
+##### Social media blocking
+
+Disable social media components in :material-menu: **Settings** → **Social media blocking** → **Uncheck all options**.
+
+##### Privacy and Security
+
+There are a few options in here you may want to change:
+
+- Set the [WebRTC IP Handling Policy](https://support.brave.com/hc/en-us/articles/360017989132-How-do-I-change-my-Privacy-Settings-#webrtc) to *Disable Non-Proxied UDP* in :material-menu: **Settings** → **Privacy and Security** → **WebRTC IP handling policy**.
+- Enable https everywhere in :material-menu: **Settings** → **Privacy and Security** → **Security** → **Always use secure connections**.
+
+##### Sanitizing on close
+
+Select every option in clear browsing data on exit except *Site and Shields settings* in :material-menu: **Settings** → **Privacy and Security** → **Clear browsing data** → **On exit**.
+
+##### Extensions
+
+Disable all extensions which you do not use in :material-menu: **Settings** → **Extensions**. You should not use the Tor tab in Brave. Brave is **not** as resistant to fingerprinting as the Tor Browser and far fewer people use Brave with Tor, so you will stand out.
+
+##### IPFS
+
+InterPlanetary File System (IPFS) is a decentralized peer-to-peer network for storing and sharing data in a distributed filesystem. Unless you use it, disable it in :material-menu: **Settings** → **IPFS** → **Method to resolve IPFS resources**.
+
+##### Background apps
+
+Disable background apps in :material-menu: **Settings** → **System** → **Continue running apps when Brave is closed**. These options are found in :material-menu: → **Settings** → **Privacy & Security**.
+
 ## Mobile Browser Recommendations
 
 Firefox on Android is still less secure than Chromium-based alternatives: Mozilla's engine [GeckoView](https://mozilla.github.io/geckoview/) has yet to support [site isolation](https://hacks.mozilla.org/2021/05/introducing-firefox-new-site-isolation-security-architecture) or enable [isolatedProcess](https://bugzilla.mozilla.org/show_bug.cgi?id=1565196).
