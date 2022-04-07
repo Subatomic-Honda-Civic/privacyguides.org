@@ -295,6 +295,10 @@ GrapheneOS's app store is available on [GitHub](https://github.com/GrapheneOS/Ap
 
 The Google Play Store requires a Google account to login which is not great for privacy. The [Aurora Store](https://auroraoss.com/download/AuroraStore/) (a Google Play Store proxy) does not, and works most of the time.
 
+### RSS Notifications on GitHub
+
+Another option would be to install the APK directly the developers git repository releases page, and set up an RSS feed to get notified of updates. This is very simple on GitHub, where you can append ".atom" to the URL of the releases page and add it an RSS reader of your choice. You don't need to worry about slow updates that come from F-Droid or hope the developer has their own F-Droid repository.
+
 ### F-Droid
 
 F-Droid is often recommended as an alternative to Google Play, particularly in the privacy community. The option to add third party repositories and not be confined to Google's walled garden has led to its popularity. F-Droid additionally has [reproducible builds](https://f-droid.org/en/docs/Reproducible_Builds/) for some applications, and is dedicated to free and open source software. However, there are problems with the official F-Droid client, their quality control, and how they build, sign and deliver packages, outlined in this [post](https://wonderfall.dev/fdroid-issues/).
