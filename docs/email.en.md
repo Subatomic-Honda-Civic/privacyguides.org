@@ -267,7 +267,7 @@ We regard these features as important in order to provide a safe and optimal ser
 
 **Best Case:**
 
-- Encrypts all account data at rest with zero-access encryption.
+- Encrypts all account data (Contacts, Calendars etc) at rest with zero-access encryption.
 - Allow users to use their own [domain name](https://en.wikipedia.org/wiki/Domain_name). Custom domain names are important to users because it allows them to maintain their agency from the service, should it turn bad or be acquired by another company which doesn't prioritize privacy etc.
 - Support for [WKD](https://wiki.gnupg.org/WKD) to allow improved discovery of public OpenPGP keys via HTTP.
     GnuPG users can get a key by typing: `gpg --locate-key example_user@example.com`
